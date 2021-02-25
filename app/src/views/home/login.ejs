@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- app.js에서 미들웨어 처리해준 src/public 안의 js폴더 안으로 들어갈수있게 됨.-->
-    <script src="/js/home/login.js"></script>
+    <!-- script 태그의 defer 속성은 페이지가 모두 로드된 후에 해당 외부 스크립트가 실행됨을 명시합니다. -->
+    <script src="/js/home/login.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <input type="text" placeholder="아이디"><br>
-    <input type="text" placeholder="비밀번호"><br>
+    <input id="id" type="text" placeholder="아이디"><br>
+    <input id="psword" type="text" placeholder="비밀번호"><br>
     <button>로그인</button>
 </body>
 </html>
