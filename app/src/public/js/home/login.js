@@ -25,5 +25,8 @@ function login() {
             "Content-Type": "application/json"
         },
         body: JSON.stringify(req),
-    });
+        //서버로부터 response를 받으려면 then을 사용한다.
+        //그런데 promise타입의 데이터가 온다. then을 한번 더 사용하자.
+    }).then((res) => res.json())
+      .then(console.log);
 }
